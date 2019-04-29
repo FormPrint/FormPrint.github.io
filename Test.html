@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>電腦套印專家</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/maindiv.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="js/GoogleAna.js"></script>
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-light navbar-expand-md">
+        <img class="headlogo" src="images/axe.gif" alt="AXE Logo">
+        <a class="navbar-brand" href="#">電腦套印專家</a>
+    
+
+
+       
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="1.html" target="contoent1">支援服務</a></li>
+            <li class="page-item"><a class="page-link" href="2.html" target="contoent1">操作說明</a></li>
+            <li class="page-item"><a class="page-link" href="3.html" target="contoent1">套印樣本</a></li>
+
+        </ul>
+    </nav>
+
+    <iframe name="contoent1" src="IndexNews.html" style="width:100%; border-width:0; overflow:hidden;" scrolling="no" onload="resizeIframe(this)"></iframe>
+</body>
+
+</html>
