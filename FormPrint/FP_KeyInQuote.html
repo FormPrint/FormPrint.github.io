@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>資料引用設定</title>
+    <link rel="stylesheet" href="../css/maindiv.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../js/GoogleAna.js"></script>
+</head>
+
+<body>
+    <h2>資料引用設定</h2>
+    <hr>
+    <p>資料引用設定可以設計資料查詢功能，例如以客戶代號或關鍵字取得客戶的相關資料，以簡化套印資料輸入的工作。如果以客代號進行查詢，而找不到資料時，系統會於套印後新增該筆資料，以供下次查詢時取用。</p>
+
+
+    <figure>
+        <img class="winimg" src="images/FP_KeyInQuote1.jpg" alt="Key in Quote1">
+        <figcaption class="TACenter">資料引用設定視窗</figcaption>
+    </figure>
+
+    <strong>基本操作說明：</strong>
+    <ol>
+        <li>指定資料表為「CUSTOMER」，並指定查詢欄位為「CUSTNO 客戶代號」。</li>
+        <li>點選<b id="bgcGrey">新增</b>按鈕後，請於「功能描述」輸入功能說明「查詢收票人資料」。</li>
+        <li>編輯及管理「<b id="bgcGrey">已選取資料表欄位</b>」、「<b id="bgcGrey">已選取輸入項目</b>」：</li>
+        <ol class="lstdlz">
+            <li>數量必需一致，列如各4個。</li>
+            <li>重設：將「已選取資料表欄位」及「已選取輸入項目」的資料清空。</li>
+            <li>加入：如果在「輸入項目一覽表」某個項目上面，用滑鼠左鍵快點2下, 即可將該項目加入至「已選取輸入項目」中。</li>
+            <li>刪除：如果要刪除「已選取資料表欄位」，請用滑鼠左鍵在該項目用滑鼠左鍵快點2下即可刪除。</li>
+            <li>調整順序：如果要調整「已選取輸入項目」內容之順序，請在該項目上面，用滑鼠左鍵按住該項目後，直接托曳至適當位置即可。</li>
+        </ol>
+        <li>存檔：設定完成後，請按<b id="bglGrey">存檔</b>以便儲存相關設定。</li>
+    </ol>
+
+    <br>
+    <strong>功能說明</strong>
+    <ol>
+        <li><b id="bgcGrey">引用設定一覽表：</b>由引用設定一覽表顯示此表格目前共設計了「查詢收票人資料」及「以客戶關鍵字查詢」等2項查詢功能。</li>
+        <li><b>資料表欄位：</b>其項目會依據「資料表」(CUSTOMER客戶、 ACCOUNT套印者)的不同，其顯示的欄位系依據被選取的資料表。</li>
+        <li><b>輸入項目一覽表：</b>其項目系依據<a href="FP_KeyInSet.html" target="contoent">資料輸入設定</a>視窗的內容所產生。</li>
+    </ol>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>電腦套印專家</title>
+        <link rel="stylesheet"  href="../css/maindiv.css">
+        <link rel="stylesheet" href="../css/text.css">
+        <meta charset= "UTF-8">
+        <script  src="../js/libs/jquery-1.9.1.js"></script>
+        <script  src="../js/libs/jquery-ui.min.js"></script>  
+
+        <style>
+          #axe{
+             margin-top: 15px;
+              margin-left: 10px;
+                   }
+              
+            
+        </style>
+        <!--
+         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+         <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>   
+        -->
+    </head>
+    <body >
+        <div id ="layout" style="height: 100%; width: 999px">
+            <header> 
+                <img id ="axe"  src="../images/axe.gif" width="32" height="32"></img>  
+                <a>電腦套印專家</a>
+            </header>
+        
+            <nav>  
+              <ul>   
+                <li><a  href="..\index.html">首頁</a> </li>
+                <li><a  href="..\Download.html">檔案下載</a></li>
+                <li><a  href="..\LeaseRegist.html">軟體租賃</a></li>
+                <li><a  href="FormPrint.html">表格套印管理系統</a></li>
+                <li><a  href="..\BankPrint\BankPrint.html">銀行套印管理系統</a></li>
+                <li><a  href="..\PrintSelect.html">認識印表機</a></li>
+                </ul> 
+             </nav>  
+<aside><pre><strong>表格套印管理系統</strong>
+<li><a href="FormPrint2.pdf">說明檔下載</a>
+<li><a href="FP_Summary.html">簡介說明</a>
+<br><strong>表格套印測試 </strong>
+<li><a href="FP_TestBuild.html">測試環境建置</a>
+<li><a href="FP_TestStart.html">執行套印測試</a>
+<li><a href="FP_QA.html">常見問題排除</a>
+<li><a href="FP_ImportPrint.html">匯入套印</a>
+   
+<strong><a href="FP_AddForm.html">增加表格套印類型</a></strong>     
+<li><a href="FP_Exchange.html">表格匯入匯出管理</a>
+<li><a href="FP_FormSA.html">表格套印設計</a>
+  <a href="FP_UserSA.html">使用者自行設計</a>      
+  <a href="FP_FormSAHelp.html">綜合設定說明</a>
+
+<strong>視窗功能說明</strong>
+<li><a href="FP_Main.html">系統首頁</a>
+<li><a href="FP_FormPrintBank.html">表格套印</a>
+<li><a href="FP_FormAccount.html">帳號管理</a>
+<li><a href="FP_Customer.html">客戶管理</a>
+<li><a href="FP_FormManage.html">表格管理</a> 
+  <a href="FP_Country.html">區域/國家管理</a>
+  <a  href="FP_Corp.html">表格來源管理</a>
+  <a  href="FP_FormType.html">表格種類管理</a>
+<li><a href="FP_FormItemSet.html">套印內容設定</a>
+  <a href="FP_FormItemDPDeploy.html">資料配置設定</a>
+  <a href="FP_FormItemDPSet.html">資料處理設定</a>
+<li><a href="FP_KeyInSet.html">資料輸入設定</a>
+  <a href="FP_KeyInQuote.html">資料引用設定</a>   
+<li><a href="FP_PrintRecordSet.html">存檔設定</a>
+<li><a href="FP_FormNoRegedit.html">表格領用登錄</a>
+<li><a href="FP_PrintRecord.html">套印記錄管理</a>
+<li><a href="FP_PrinterSet.html">印表機設定</a>
+</li></pre>
+    </aside>
+            
+   <section id="main">
+	   <h2>套印內容設定–套印項目管理</h2>
+	   <hr>
+            <nav>  
+              <ul>   
+                  <li><a href="FP_FormItemSet.html">套印內容設定</a></li>
+                  <li><a href="FP_FormItemSetPublic.html">公用區</a></li>
+                  <li><a href="FP_FormItemSetManage.html">套印項目管理</a></li>
+                  <li><a href="FP_FormItemSetContent.html">內容設定</a></li>   
+              </ul> 
+            </nav>         
+
+<p>可由這裏增減套印項目，套印項目泛指要印於表格上面的字串或圖檔。套印項目可分為可改變內容及不可改變內容等2種類型。</p>
+<pre>    要加套印項目時，請先依需要點右列<img src="images/FP_FormItemSetManage1.jpg"><img src="images/FP_FormItemSetManage2.jpg"><img src="images/FP_FormItemSetManage3.jpg"><img src="images/FP_FormItemSetManage4.jpg">    其中一項類型後，再於用滑鼠於
+表格圖檔上面適當位置用滑鼠點擊即可加入套印項目。
+
+<img src="images/FP_FormItemSetManage5.jpg" width="640" style="display:block;margin:auto;"/>                           
+                                套印項目管理工作頁
+
+  1.連續加入：打勾後，再選擇套印類型，就能在表格底圖上面，無限制的加入套印項目，但
+    這種方式加入的套印項目互為獨立沒有群組關係。
+  2.數量：一次加入多個同類型的套印項目，這些項目也會自動成群組關係;例如銀行帳號有14
+    碼，您就可以一次加入14個字串以供套印帳號使用。
+  3.間距：
+    (1)與「數量」配合使用，若數值太小，所有套印項目可能會重疊在一起。
+    (2)單位是mm，1公分等於10 mm。 
+  4.刪除：先點選某個套印項目，再按下刪除，即可以刪除該套印項目。
+  5.清空：清空所有的套印項目。
+  6.套印類型 
+    (1)<img src="images/FP_FormItemSetManage1.jpg">資料型字串：可以動態改變其內容，例如支票收票人名稱，此類型的字串通常會於
+       套印後進行存檔備查。項目名稱以「QRDBTEXT」進行編碼。
+    (2)<img src="images/FP_FormItemSetManage2.jpg">一般字串：用於固定不變的字串，例如「禁止背書轉讓」。項目名稱以「QRLABEL」
+       進行編碼。
+    (3)<img src="images/FP_FormItemSetManage3.jpg">資料圖檔：可以動態改變其內容，例如列印員工識別證時，每個人的相片圴不相同。
+       項目名稱以「QRDBImage」進行編碼。
+    (4)<img src="images/FP_FormItemSetManage4.jpg">一般圖檔：用於固定不變的圖檔內容，例如「平行線」、商標。項目名稱以
+      「QRImage」為碼。
+  7.位置：可以用輸入數值的方式調整套印項目的位置，例如上面、左邊，如果要用滑鼠托曳
+    位置，「用滑鼠調整大小」必需打勾。
+  8.大小：可以用輸入數值的方式調整套印項目的大小(如寬度、高度)或尺寸(如寬度或高度。
+  9.印表機：
+    (1)一般表格套印時，只會用1台印表機，此時只要使用第一台(預設值)即可。
+    (2)為了節省成本或是特殊套印，您可使用2台印表機執行套印工作，例如一台套印MICR
+       字串，一台套印彩色圖案。
+</pre>        
+          </section>    
+        </div>   
+    </body>
+</html>
+

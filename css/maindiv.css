@@ -1,0 +1,190 @@
+.headlogo{
+    margin: 0px 0px 0px 0px;
+    width:48px;
+    height:40px
+   } /*標題商標*/
+
+.navbar, .container-fluid{
+	font-size:1.3rem;
+	font-family : DFKai-sb; /* 標楷體 */
+        background:#CCFFBB;
+   } /*標題商標*/
+
+.headtitle{
+margin: -45px 0px 0px 120px;
+font-size: 32px;    
+}/*標題名稱*/
+
+              
+header {
+    height: 55px;
+    width:100%;
+    margin:auto;
+    background:#CCFF00;
+}
+
+ body {
+    height:100%;
+	font-size:1.3rem;
+	font-family : DFKai-sb; /* 標楷體 */
+}
+
+aside {
+    height: 100%;
+    float:left;
+    width: 200px;
+    padding: 0px 0px 0px 0px;
+    line-height: 25px;  /* 設定文字行距 */    
+}
+
+#divmain{
+	width: 100%;
+    height: 1000px;	
+    padding: 0px 0px 0px 200px;
+}
+
+section{   
+   height: 900px;
+   padding: 0px 0px 0px 200px;
+}
+
+nav {
+ margin: 0px 0px 0px 0px;
+  background: papayawhip;  
+}
+nav ul {
+	margin: 0px;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+nav ul li {
+	display: inline;
+	padding: 5px 10px 5px 10px;/* 保持選單的距離 */
+}
+nav ul li a:link, nav ul li a:visited {
+	color: #3a45cc;
+	border-bottom: none;
+	font-weight: bold;
+    
+}
+nav ul li.selected {
+	color: #c8b99c;
+}
+
+
+
+th, td {
+    padding: 5px;
+}
+
+/*表格相關設定*/
+.trtitle {
+   background-color: #f1f1c1;
+}
+
+/*表格有框線*/
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin:auto;
+}
+
+/*表格無框線*/
+.TableNoBorder {
+   border: 0px solid black;  
+}
+
+/*表格無框線，並在下面填充空間 */
+.ThNoBorderPadding {
+   border: 0px solid black;  
+   padding: 0px 0px 40px 0px;
+}
+
+/*表格內容置中*/
+.TACenter1{
+    text-align: center;
+   }
+
+/*文字置中，文字下面加大行高*/
+.TACenter{
+    text-align: center;
+    padding: 0px 0px 40px 0px;
+}
+
+/*文字靠左*/
+.TAleft {
+   text-align: left;
+}
+
+.thwa{
+ width:80px;
+}
+
+.pad {
+    padding: 0px 0px 0px 20px;
+}
+.pad2 {
+    padding: 0px 0px 0px 40px;
+}
+
+.img{
+    border:1px solid #999;
+    padding:5px;
+    ackground:#efefef;
+}
+.winimg {
+	border:1px solid #999;
+    max-width:720px;
+    height:inherit;
+    width:expression(document.body.clientWidth&gt;720?"720px""auto");
+    /*若圖片大於550px就調整*/
+    overflow:hidden;      /*超過不顯示*/
+    display:block; 
+    margin:auto;
+    padding: 0px 0px 10px 0px;
+}
+
+
+
+h2, .TACenterU{
+    text-align: center;
+    
+}
+
+/*以大寫英文字母為編琥*/
+.lstuA{  
+list-style-type: upper-alpha;
+}
+/*以小寫英文字母為編琥*/
+.lstla{
+list-style-type: lower-alpha;
+}
+}
+
+/*以小寫英文字母為編琥*/
+.lstdlz{
+list-style-type: decimal-leading-zero;
+}
+
+
+#divtop{
+    height: 105px;
+    width:100%;
+    margin:auto;
+    background:#CCFF00;
+}
+
+#divleft{
+    float:left;
+     width: 200px;
+    padding: 0px 0px 0px 0px;
+    line-height: 25px;  /* 設定文字行距 */    
+}
+
+/*顏色*/
+#bgcGrey {background-color:rgb(212, 212, 212);}
+
+/*功能表*/
+.has_children{ cursor:pointer; width:300px;}
+.highlight{backgroung:#F60;}
+div dt{ display:none; width:300px; float:left;}

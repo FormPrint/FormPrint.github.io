@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>電腦套印專家</title>
+        <link rel="stylesheet"  href="../css/maindiv.css">
+        <link rel="stylesheet" href="../css/text.css">
+        <meta charset= "UTF-8">
+        <script  src="../js/libs/jquery-1.9.1.js"></script>
+        <script  src="../js/libs/jquery-ui.min.js"></script>  
+
+        <style>
+          #axe{
+             margin-top: 15px;
+              margin-left: 10px;
+                   }
+              
+            
+        </style>
+        <!--
+         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+         <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>   
+        -->
+    </head>
+    <body >
+        <div id ="layout" style="height: 100%; width: 999px">
+        <header> 
+            <img id ="axe"  src="../images/axe.gif" width="32" height="32"></img>  
+            <a>電腦套印專家</a>
+        </header>
+        
+        <nav>  
+          <ul>   
+                <li><a  href="..\index.html">首頁</a> </li>
+                <li><a  href="..\Download.html">檔案下載</a></li>
+                <li><a  href="..\LeaseRegist.html">軟體租賃</a></li>
+                <li><a  href="FormPrint.html">表格套印管理系統</a></li>
+                <li><a  href="..\BankPrint\BankPrint.html">銀行套印管理系統</a></li>
+                <li><a  href="..\PrintSelect.html">認識印表機</a></li>
+            </ul> 
+        </nav>  
+<aside><pre><strong>表格套印管理系統</strong>
+<li><a href="FormPrint2.pdf">說明檔下載</a>
+<li><a href="FP_Summary.html">簡介說明</a>
+<br><strong>表格套印測試 </strong>
+<li><a href="FP_TestBuild.html">測試環境建置</a>
+<li><a href="FP_TestStart.html">執行套印測試</a>
+<li><a href="FP_QA.html">常見問題排除</a>
+<li><a href="FP_ImportPrint.html">匯入套印</a>
+   
+<strong><a href="FP_AddForm.html">增加表格套印類型</a></strong>     
+<li><a href="FP_Exchange.html">表格匯入匯出管理</a>
+<li><a href="FP_FormSA.html">表格套印設計</a>
+  <a href="FP_UserSA.html">使用者自行設計</a>      
+  <a href="FP_FormSAHelp.html">綜合設定說明</a>
+
+<strong>視窗功能說明</strong>
+<li><a href="FP_Main.html">系統首頁</a>
+<li><a href="FP_FormPrintBank.html">表格套印</a>
+<li><a href="FP_FormAccount.html">帳號管理</a>
+<li><a href="FP_Customer.html">客戶管理</a>
+<li><a href="FP_FormManage.html">表格管理</a> 
+  <a href="FP_Country.html">區域/國家管理</a>
+  <a  href="FP_Corp.html">表格來源管理</a>
+  <a  href="FP_FormType.html">表格種類管理</a>
+<li><a href="FP_FormItemSet.html">套印內容設定</a>
+  <a href="FP_FormItemDPDeploy.html">資料配置設定</a>
+  <a href="FP_FormItemDPSet.html">資料處理設定</a>
+<li><a href="FP_KeyInSet.html">資料輸入設定</a>
+  <a href="FP_KeyInQuote.html">資料引用設定</a>   
+<li><a href="FP_PrintRecordSet.html">存檔設定</a>
+<li><a href="FP_FormNoRegedit.html">表格領用登錄</a>
+<li><a href="FP_PrintRecord.html">套印記錄管理</a>
+<li><a href="FP_PrinterSet.html">印表機設定</a>
+</li></pre>
+    </aside>
+    
+    <section id="main">
+	   <h2>套印記錄存檔管理–視窗功能說明</h2>
+	   <hr>
+            <nav>  
+              <ul>   
+                  <li><a href="FP_PrintRecordSet.html">套印記錄存檔管理</a></li>
+                  <li><a href="FP_PrintRecordSetHelp.html">視窗功能說明</a></li>
+              </ul> 
+            </nav> 
+<pre>  1.輸入項目一覽表與存檔設定一覽表，其內容係參考輸入設定視窗裏面的設定。
+  2.無順序編號：由輸入設定視窗加入的項目。
+  3.有編號編號：為可套印的項目。
+     <img src="images/FP_PrintRecordSetHelp1.jpg"><img src="images/FP_PrintRecordSetHelp2.jpg">
+     
+            輸入項目一覽表                            存檔設定一覽表
+
+
+<strong>存檔欄位一覽表：</strong>系統預設的存檔欄位
+<img src="images/FP_PrintRecordSetHelp1.jpg" style="display:block; margin:auto;"/>    
+<div style="text-align:center;">存檔欄位一覽表</div>
+<strong>輸入項目與存檔欄位使用說明：</strong>
+  1.數量必需一致，列如各4個。
+  2.類型要一致。例如日期，就只能配合日期一、日期二，配對錯誤，系統可能會產生錯誤。
+    原則上覺使用日期一，如有第二個日期再使用日期二
+  3.同類型的表格設定最好一致，例如支票，到期日固定用日期一，不然整合性查詢時會產生
+    困擾。例如設定3家銀行的支票，如果有一家的日期設定為日期一，另外二家設定為日期二，
+    雖然各別查詢沒有問題，但是無法以日期作為條件，對3種支票進行整合性查詢。
+    
+<img src="images/FP_PrintRecordSetHelp4.jpg" style="display:block; margin:auto;"/> 
+</pre>
+<div style="text-align:center;">輸入項目與存檔欄位配對設定</div>       
+            </section>    
+        </div>   
+    </body>
+</html>
+

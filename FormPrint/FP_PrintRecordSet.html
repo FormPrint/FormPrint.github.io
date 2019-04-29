@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>套印記錄存檔管理</title>
+    <link rel="stylesheet" href="../css/maindiv.css">
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="../js/GoogleAna.js"></script>
+</head>
+
+<body>
+    <h2>套印記錄存檔管理</h2>
+    <hr>
+
+    <p>執行本視窗的設定，可在執行套印後將套印紀錄儲存下來 以供日後查詢分析，並且做為<strong>匯入套印</strong>匯入檔案欄位的依據。
+    </p>
+
+    <figure>
+        <img class="winimg" src="images/FP_PrintRecordSet1.jpg" alt="Print Record Set1">
+        <figcaption class="TACenter">套印記錄存檔管理視窗</figcaption>
+    </figure>
+
+    <strong>基本操作說明：</strong>
+    <ol>
+        <li>將<strong>輸入項目一覽表</strong>的資料加入<strong>輸入項目</strong>的區域，或者將<strong>存檔欄位一覽表</strong>的資料加入<strong>存檔欄位</strong>的區域</li>
+            <ol class="lstdlz">
+                <li>重設：將輸入項目一覽表的資料匯入輸入項目區域，並將存檔欄位區域的資料清空。</li>
+                <li>加入：如果在存檔欄位一覽表中的某個項目上面，用滑鼠左鍵快點2下, 即可將該項目加入至存檔欄位區域。</li>
+                <li>刪除：如果要將存檔欄位欄位區域中的項目刪除，請在該項目上面用滑鼠左鍵快點資料2下，即可刪除該項目。</li>
+            </ol>        
+        
+        <li>調整輸入項目區域或存檔欄位區域內的項目順序，請在要移動的項目上面，按住滑鼠左鍵後，直接托曳至適當位置。</li>
+
+    </ol>
+
+    <br>
+    <strong>功能說明</strong>
+    <ol>
+        <li><b>輸入項目一覽表：</b></li>
+        <ol class="lstdlz">
+          <li>其內容係依據<a href="FP_KeyInSet.html" target="contoent">資料輸入設定</a>視窗的內容所產生</li>
+        <li>「順序」欄位說明：無順序編號的「輸入名稱」，系由<a  href="FP_FormItemDPSet.html" target="contoent">資料輸入設定</a>加入的項目(通常用於查詢及輔助輸入功能)。有順序編號的輸入名稱，為實際套印的項目。</li>
+        </ol>
+        <li><b>存檔欄位目一覽表：</b></li>
+        <ol class="lstdlz">
+          <li>一個通用的資料表，提供各種表格套印時，儲存套印資料。</li>
+        <li>全部(專用)欄位：如果尚未設存檔時，會出現全部欄位，如果已完成存檔時則會出現專用欄位，但是使用者也可以手動自行切換。</li>
+        </ol>
+
+
+        <li><b>輸入項目</b>與<b>存檔欄位</b>使用說明：</li>
+    <ol class="lstdlz">
+        <li>數量必需一致，列如各4個。</li>
+        <li>類型要一致。例如日期，就只能配合日期一、日期二，配對錯誤，系統亦會產生錯誤。同類型如果有多個編號一開始用，例如日期就先使用日期一，如有第二個日期再使用日期二。有一個規則可循，後序的查循分析才能順利進行。</li>
+        <li>同類型的表格設定最好一致，例如支票，到期日固定用日期一，不然整合性查詢時會產生困擾。例如設定3家銀行的支票，如果有一家的日期設定為日期一，另外二家設定為日期二，雖然各別查詢沒有問題，但是如果要整合查詢時，就無法以日期作為條件，對3種支票進行整合性查詢。</li>
+    </ol>
+        <li><b>套印設定記錄列表</b>：顯示<b>輸入項目</b>與<b>存檔欄位</b>配對結果。</li>
+        </ol>
+</body>
+
+</html>

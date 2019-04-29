@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>電腦套印專家</title>
+        <link rel="stylesheet"  href="../css/maindiv.css">
+        <link rel="stylesheet" href="../css/text.css">
+        <meta charset= "UTF-8">
+        <script  src="../js/libs/jquery-1.9.1.js"></script>
+        <script  src="../js/libs/jquery-ui.min.js"></script>  
+
+        <style>
+          #axe{
+             margin-top: 15px;
+              margin-left: 10px;
+                   }
+              
+            
+        </style>
+        <!--
+         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+         <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>   
+        -->
+    </head>
+    <body >
+        <div id ="layout" style="height: 100%; width: 999px">
+            <header> 
+                <img id ="axe"  src="../images/axe.gif" width="32" height="32"></img>  
+                <a>電腦套印專家</a>
+            </header>
+        
+            <nav>  
+              <ul>   
+                <li><a  href="..\index.html">首頁</a> </li>
+                <li><a  href="..\Download.html">檔案下載</a></li>
+                <li><a  href="..\LeaseRegist.html">軟體租賃</a></li>
+                <li><a  href="FormPrint.html">表格套印管理系統</a></li>
+                <li><a  href="..\BankPrint\BankPrint.html">銀行套印管理系統</a></li>
+                <li><a  href="..\PrintSelect.html">認識印表機</a></li>
+                </ul> 
+             </nav>  
+<aside><pre><strong>表格套印管理系統</strong>
+<li><a href="FormPrint2.pdf">說明檔下載</a>
+<li><a href="FP_Summary.html">簡介說明</a>
+<br><strong>表格套印測試 </strong>
+<li><a href="FP_TestBuild.html">測試環境建置</a>
+<li><a href="FP_TestStart.html">執行套印測試</a>
+<li><a href="FP_QA.html">常見問題排除</a>
+<li><a href="FP_ImportPrint.html">匯入套印</a>
+   
+<strong><a href="FP_AddForm.html">增加表格套印類型</a></strong>     
+<li><a href="FP_Exchange.html">表格匯入匯出管理</a>
+<li><a href="FP_FormSA.html">表格套印設計</a>
+  <a href="FP_UserSA.html">使用者自行設計</a>      
+  <a href="FP_FormSAHelp.html">綜合設定說明</a>
+
+<strong>視窗功能說明</strong>
+<li><a href="FP_Main.html">系統首頁</a>
+<li><a href="FP_FormPrintBank.html">表格套印</a>
+<li><a href="FP_FormAccount.html">帳號管理</a>
+<li><a href="FP_Customer.html">客戶管理</a>
+<li><a href="FP_FormManage.html">表格管理</a> 
+  <a href="FP_Country.html">區域/國家管理</a>
+  <a  href="FP_Corp.html">表格來源管理</a>
+  <a  href="FP_FormType.html">表格種類管理</a>
+<li><a href="FP_FormItemSet.html">套印內容設定</a>
+  <a href="FP_FormItemDPDeploy.html">資料配置設定</a>
+  <a href="FP_FormItemDPSet.html">資料處理設定</a>
+<li><a href="FP_KeyInSet.html">資料輸入設定</a>
+  <a href="FP_KeyInQuote.html">資料引用設定</a>   
+<li><a href="FP_PrintRecordSet.html">存檔設定</a>
+<li><a href="FP_FormNoRegedit.html">表格領用登錄</a>
+<li><a href="FP_PrintRecord.html">套印記錄管理</a>
+<li><a href="FP_PrinterSet.html">印表機設定</a>
+</li></pre>
+    </aside>
+            
+   <section id="main">
+	   <h2>套印內容設定–內容設定</h2>
+	   <hr>
+            <nav>  
+              <ul>   
+                  <li><a href="FP_FormItemSet.html">套印內容設定</a></li>
+                  <li><a href="FP_FormItemSetPublic.html">公用區</a></li>
+                  <li><a href="FP_FormItemSetManage.html">套印項目管理</a></li>
+                  <li><a href="FP_FormItemSetContent.html">內容設定</a></li>             
+              </ul> 
+            </nav>         
+
+<p>套印項目有字串及圖檔2種類型，因此內容設定會依不同的類型提供不同的設定功能。</p>
+<pre><img src="images/FP_FormItemSetContent1.jpg" style="display:block;margin:auto;"/>       
+<div style="text-align:center;">字串類型工作頁</div> 
+<strong>1.字串類型：</strong>
+  (1)自動縮放：未勾選時可以配合「調整大小」來調型套印項目的外觀大小。 
+  (2)字串設定：與Word使用的方式相同，可調整顏色、大小、框線之類的功能。
+  (3)內容引用：依指定的套印項目，其大小、顏色..等及內容引用輸入框，來改變群組或全部
+     套印的設定值。
+       I.輸入框：如有輸入資料後可用於修改群組或全部套印項目的<strong>顯示名稱</strong>，若為空白
+        (預設值)則不影響其他項目<strong>顯示名稱</strong>. 稱。本功能主要便利調整群組外觀，例如帳號，
+         都只顯示1個字元以利管理設定。
+      II.群組：可改變群組套印項目。例如全部改為置中對齊。
+     III.全部：可以改變該表格所有的字串屬性，例如字體全部設為標楷體，大小設為12。 
+  (4)群組位置：可將整個群組的套印項目位置作均分、同左、同高處理。 
+       I.自動配置群組套印項目位置：指定群組最左及最右的位置後，將群組成員(套印項目)
+         依固定距離均分該空間。例如銀行帳號有14碼，本功能於指定第1碼及第最後一碼的
+         位置後，受執行均分，此時所有帳號即會以適當的距離分享該寬度。
+           (I)設定第1碼：先點選群組中最左邊的項目後再按下<img src="images/FP_FormItemSetLeft.jpg"> (左)。
+          (II)設定最後1碼：先點選群組最右邊的項目後再按下<img src="images/FP_FormItemSetRight.jpg">(右)，
+         (III)均分位置：點選<img src="images/FP_FormItemSetSplit.jpg">(均分)即可將帳號所有成員的位置調整完成。。
+      II.同左：點選群組任一成員，按下<img src="images/FP_FormItemSetAllLeft.jpg">(同左)即可。
+     III.同高：點選群組任一成員，按下<img src="images/FP_FormItemSetAllTop.jpg">(同高)即可。
+<strong>2.圖檔類型：</strong>套印項目如為圖檔類型，執行圖檔設定可以加入、移除其指定的圖檔。
+
+<img src="images/FP_FormItemSetContent2.jpg" height="150" style="display:block;margin:auto;"/>      
+<div style="text-align:center;">內容設計工作頁</div></pre>
+        </section>    
+        </div>   
+    </body>
+</html>
+
