@@ -15,6 +15,13 @@ margin: -45px 0px 0px 120px;
 font-size: 32px;    
 }/*標題名稱*/
 
+
+img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;	
+}
               
 header {
     height: 55px;
@@ -36,6 +43,11 @@ aside {
     padding: 0px 0px 0px 0px;
     line-height: 25px;  /* 設定文字行距 */    
 }
+
+H2{
+    text-align: center;
+}
+
 
 #divmain{
 	width: 100%;
@@ -130,8 +142,10 @@ table, th, td {
 .img{
     border:1px solid #999;
     padding:5px;
-    ackground:#efefef;
+    background:#efefef;
 }
+
+
 .winimg {
 	border:1px solid #999;
     max-width:720px;
@@ -145,23 +159,7 @@ table, th, td {
 }
 
 
-
-h2, .TACenterU{
-    text-align: center;
-    
-}
-
-/*以大寫英文字母為編琥*/
-.lstuA{  
-list-style-type: upper-alpha;
-}
-/*以小寫英文字母為編琥*/
-.lstla{
-list-style-type: lower-alpha;
-}
-}
-
-/*以小寫英文字母為編琥*/
+/*以01小寫英文字母為編琥*/
 .lstdlz{
 list-style-type: decimal-leading-zero;
 }
