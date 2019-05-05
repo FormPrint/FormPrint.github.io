@@ -16,12 +16,7 @@ font-size: 32px;
 }/*標題名稱*/
 
 
-img{
-	width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 100%;	
-}
+
               
 header {
     height: 55px;
@@ -147,10 +142,17 @@ table, th, td {
 
 
 .winimg {
+ 
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;	
+
 	border:1px solid #999;
+    /*
     max-width:720px;
     height:inherit;
-    width:expression(document.body.clientWidth&gt;720?"720px""auto");
+    width:expression(document.body.clientWidth&gt;720?"720px""auto"); */
     /*若圖片大於550px就調整*/
     overflow:hidden;      /*超過不顯示*/
     display:block; 
