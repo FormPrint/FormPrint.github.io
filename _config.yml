@@ -1,0 +1,8 @@
+title: Formprint.GitHub.io
+description: 電腦套印專家提供免費的表格套印軟體
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-slate
+
+gems:
+  - jekyll-mentions
