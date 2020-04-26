@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+/*
+ Document   : text
+ Author     : wst
+ Description: styles used by jQuery accordion widget
+ */
+h2 {
+	text-align: center;
+}
+
+p {
+	text-indent: 35px;
+}
+
+
+.TextAlignCenter {
+		text-align: center;
+		font-size: large;
+	}
+	
+

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <title>資料輸入設定</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../css/maindiv.css">
+	<script type="text/javascript" src="../js/gtag.js"></script>
+</head>
+
+<body>
+    <h1>資料輸入設定</h1>
+    <hr>
+
+    <p>如果您的表格(例如支票)設定完成時即提供「匯入套印」的功能，如果要提供「輸入套印」的功能，就必需在這個視窗進行設定。</p>
+    <p>每一個表格都會以套印內容中可輸入的項目，做為表格基本的輸入項目，若要便利套印資料輸入工作，可以「新增項目」，以便加入相關的資料處理功能，例如「收票人代號」讓使用者可以輸入，用代號查出收票人的相關資料，但不會印表表格上面。</p>
+    <figure>
+        <img class="winimg" src="images/FP_KeyInSetItem1.jpg" alt="資料輸入設定視窗">
+        <figcaption class="TACenter">資料輸入設定視窗</figcaption>
+    </figure>
+    <strong>視窗功能說明：</strong>
+    <ol>
+        <li><b id="bgcGrey">新增項目</b>：可以在「項目一覽表」增加一筆「Extra」開頭的項目依此方式產生的套印項目有下列特性：</li>
+        <ol class="lstdlz">
+            <li>該項目的資料不會套印於表格上面。</li>
+            <li>主要用於「資料引用」以便取利用少量的輸入)取得的大量資料。例如增加「收款人代號」之套印項目，是為了只要輸入代號後即可取得更多的收款人資料。</li>
+            <li>增加可存檔內容：例如要儲存票號，就加入一個票號的套印項目。</li>
+        </ol>
+        <li><b id="bgcGrey">重設</b>：將「項目一覽表」內的資料還原至套印內容的設定，移除所有由「新增項目」所產生的資料，並且清空所有「項目功能」。</li>
+        <li><b id="bgcGrey">引用設定</b>：設定用查詢的方式取得更多的資料。</li>
+        <li><b id="bgcGrey">存檔設計</b>：設定將套印紀綠儲存，以備日後查詢分析。</li>
+    </ol>
+    <br>
+    <strong>輸入項目管理：</strong>
+    <ol>
+        <li><b id="bgcGrey">項目一覽表</b>：提供使用者輸入資料，以及存檔設定的基礎。</li>
+        <ul class="lstdlz">
+            <li>新增：點擊<b id="bgcGrey">新增項目</b>可以在「項目一覽表」增加一筆「Extra」開頭的項目，請於「項目名稱」修改名稱(例如：收票人代號)。</li>
+            <li>刪除：請在該項目上面，用滑鼠左鍵快點2下，即可刪除。</li>
+            <li>調整順序：請用滑鼠左鍵按住該項目後，直接托曳至適當位置即可。</li>
+        </ul>
+        <li><b id="bgcGrey">項目功能</b>：將某個項目增加處理功能，例如提供將日期輸入時，可以引用前次資料(不用每次都輸入)的功能。提供使用者輸入資料，以及存檔設定的基礎。</li>
+        <ul class="lstdlz">
+            <li>新增：點擊<b>資料處理功能</b>「輸入處理」工作頁或「資料引用」工作頁中的處理功能即可。例如要增加「日期」項目增加「引用前次資料」，請在</li>
+            <li>刪除：請在該項目上面，用滑鼠左鍵快點2下，即可刪除。</li>
+            <li>調整順序：請用滑鼠左鍵按住該項目後，直接托曳至適當位置即可。</li>
+        </ul>
+
+    </ol>
+
+    <br>
+    <strong>資料處理功能</strong>
+
+    <p class="pad">為簡化使用輸入的方式進行套印，本軟體提供了<b id="bgcGrey">輸入處理</b>工作頁及<b id="bgcGrey">資料引用</b>工作頁2項功能，說明如下：</p>
+    <ol>
+        <li>輸入處理：這裏的功能都由程式開發者設計。目前將功能分為5種類型，每一種輸入類型，各有不同的處理功能：</li>
+        <ul class="lstdlz">
+            <li>前置處理：游標一進入輸入項目，立刻開始執行處理功能</li>
+            <li>後置處理：游標一離開輸入項目，立刻開始執行處理功能</li>
+            <li>操作：在輸入的過程對輸入資料進行檢查或限制。</li>
+            <li>日期：針對日期進行處理。游標一離開輸入項目，立刻開始執行處理功能</li>
+            <li>進階：提供上述4種以外的功能</li>
+        </ul>
+
+
+        <figure>
+            <img class="winimg" src="images/FP_KeyInDP1.jpg" alt="輸入處理工作頁">
+            <figcaption class="TACenter">輸入處理工作頁</figcaption>
+        </figure>
+
+
+
+        <p class="TACenterU">輸入處理功能說明一覽表</p>
+        <table>
+            <tbody>
+                <tr class="trtitle">
+                    <th>類別</th>
+                    <th width="20px">編號</th>
+                    <th width="120x">功能</th>
+                    <th width="50x">參數一</th>
+                    <th width="50x">參數二</th>
+                    <th>說明</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2"><strong>計算功能</strong>
+                    </td>
+                    <td>1</td>
+                    <td>金額加總</td>
+                    <td>前項數目</td>
+                    <td></td>
+                    <td>將指定的「前項數目」進行加總計算，並做為目前輸入項目的值。例如：「前項數目」設「3」，就會將前3個輸入項目的值進行加總，並作為目前輸入項目的值。</td>
+                </tr>
+                   <tr>
+                    <td>2</td>
+                    <td>數量 * 單價 = 總價</td>
+                    <td></td>
+                    <td></td>
+                    <td>將前2個輸入項目的值進行相乘計算後，作為目前輸入項目的值。例如：黃金存摺摺1公克1200元，若買5個公克就會輸出6000元。</td>
+                </tr>
+ 
+                               <tr>
+                    <td rowspan="2"><strong>日期</strong>
+                    </td>
+                    <td>1</td>
+                    <td>免輸入分隔符號轉西元日期</td>
+                    <td></td>
+                    <td></td>
+                    <td>輸入臺灣日期或西元日期都可自動轉成系統內定的日期格式，例如：輸入「1050127」或「20160127」都會轉成「2016/01/27」。</td>
+                </tr>
+                   <tr>
+                    <td>2</td>
+                    <td>自動加入日期</td>
+                    <td>月</td>
+                    <td>日</td>
+                    <td>進入輸入項目後，立即顯示當日的日期，如果有設定「月」、「日」的參數，會先進行計算，再顯示當日的日期。</td>
+                </tr>
+                              
+     <tr>
+                    <td rowspan="7"><strong>輸入設定</strong> </td>
+                                
+                    <td>1</td>
+                    <td>限定數字</td>
+                    <td></td>
+                    <td></td>
+                    <td>限定只能輸入數字及數字相關符號.-</td>
+                </tr>  
+
+                                     <tr>
+                    <td>2</td>
+                    <td>限制長度</td>
+                    <td>長度</td>
+                    <td></td>
+                    <td>限制資料能夠輸入的長度，例如帳號僅限定輸入14位數</td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>英文以大寫呈現</td>
+                    <td></td>
+                    <td></td>
+                    <td>輸入英文時，以大寫呈現，例如：輸入abc會出現「ABC」</td>
+                </tr>
+                 <tr>
+                    <td>4</td>
+                    <td>英文數字轉半型字體</td>
+                    <td></td>
+                    <td></td>
+                    <td>輸入英文及數字時，會以半型字體呈現，例如：輸入aＢc１２3，離開輸入項目時，會呈現「aBc123」</td>
+                </tr>      
+                                <tr>      
+                    <td>5</td>
+                    <td>英文數字轉全型字體</td>
+                    <td></td>
+                    <td></td>
+                    <td>輸入英文及數字時，會以全型字體呈現，例如：輸入aＢc１２3，離開輸入項目時，會呈現「ａＢｃ１２３」</td>
+                </tr>
+                
+                <tr>
+                    <td>6</td>
+                    <td>依字數分割字串</td>
+                    <td>分割</td>
+                    <td></td>
+                    <td>輸入字串超過指定的長度時，自動分割為2行。例如：支票「憑票支付」如果只有6公分(約12個字)的寬度，一但超過分割指定的字數(例如：12個字)就自動分割成2行。</td>
+                </tr>      
+                   <tr>
+                    <td>7</td>
+                    <td>擇一輸入</td>
+                    <td></td>
+                    <td></td>
+                    <td>輸入一個值以決定下一個輸入項目。例如：聯邦銀行存取款憑條，有2個地方可以輸入帳號，如果輸入1就套印取款帳號(另1個隱藏)，若輸入2就套印存款帳號。</td>
+                </tr>
+
+               
+                                   
+                <tr>
+                    <td rowspan="8"><strong>資料引用</strong>
+                    </td>
+                    <td>1</td>
+                    <td>自動加入套印者代號</td>
+                    <td></td>
+                    <td></td>
+                    <td>進入輸入項目後，於輸入項目自動加入套印者代號</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>自動加入帳戶名稱</td>
+                    <td></td>
+                    <td></td>
+                    <td>於輸入項目自動加入套印者帳號名稱</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>自動加入銀行帳號</td>
+                    <td></td>
+                    <td></td>
+                    <td>於輸入項目自動加入套印者銀行帳號</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>自動加入前次資料</td>
+                    <td></td>
+                    <td></td>
+                    <td>資料輸入並經列印(或預覽)後，於新增的套印上面會自動將前次的輸入內容帶入。</td>
+                </tr> 
+                    <tr>
+                    <td>5</td>
+                    <td>已登錄的流水號</td>
+                    <td></td>
+                    <td></td>
+                    <td>將已先於「資料管理 >　表格領用登錄」的票號自動帶出。例如：支票號碼，帶出票號的規則是「登錄順序 >票號大小」且未曾用過(票據屬性為空白)的支票。 。</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>西元日期流水號</td>
+                    <td>序號長度</td>
+                    <td></td>
+                    <td>系統自動當日(西元日期 + 指定長度)的流水號。</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>流水號</td>
+                    <td></td>
+                    <td></td>
+                    <td>任意輸入數值或字串(最後面要有數值即可)，系統會於列印後，更新流水號(加1)。</td>
+                </tr>
+                
+                 <tr>
+                    <td>8</td>
+                    <td>關鍵字查詢客戶名稱</td>
+                    <td></td>
+                    <td></td>
+                    <td>輸入關鍵字時會自動查詢客戶(收款人)名稱，如果符合的資料僅剩1筆時，系統就自動加入該客戶編號，以利找出客戶相關資料。</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <br>
+        <li>資料引用：這裏的功能都可由套印者自行設計, 因此每一個人、每一種表格可使用的功能可能都不同。如果管理「引用功能」，請執行<b id="bgcGrey">引用設定</b>工作頁新增功能，即可進入資料引用設定設窗。</li>
+
+
+
+
+    <figure>
+        <img class="winimg" src="images/FP_KeyInDP2.jpg" alt="資料引用工作">
+        <figcaption class="TACenter">資料引用工作頁</figcaption>
+    </figure>
+    <p class="TACenterU">資料引用功能一覽表</p>
+    <table>
+
+        <tr class="trtitle">
+            <th>類別</th>
+            <th width="40px">編號</th>
+            <th width="160x">功能</th>
+            <th>說明</th>
+        </tr>
+        <tr>
+            <td><strong>ACCOUNT</strong>
+            </td>
+            <td class="TACenter1">1</td>
+            <td></td>
+            <td>未設定</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><strong>CUSTOMER</strong>
+            </td>
+            <td class="TACenter1">2</td>
+            <td>以收票人代號查詢</td>
+            <td>輸入收票人代號，即可查詢收票人相關資料</td>
+        </tr>
+        <tr>
+            <td class="TACenter1">3</td>
+            <td>以收票人名稱查詢</td>
+            <td>輸入收票人名稱後，即可查詢收票人相關資料，可搭配<b>關鍵字查詢客戶名稱</b>輸入處理功能，以簡少輸入的字數。</td>
+        </tr>
+    </table>
+        </ol>
+</body>
+
+</html>
