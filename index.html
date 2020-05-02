@@ -22,7 +22,7 @@
 	<!-- 導覽列  -->
 	<nav class="navbar navbar-light navbar-expand-md">
 		<a href="latest_news.html" target="content"><img class="headlogo" src="images/axe.gif" alt="電腦套印專家 Logo"></a>
-		<a href="#" class="navbar-brand" href="latest_news.html" target="content">電腦套印專家</a>
+		<a class="navbar-brand" href="latest_news.html" target="content">電腦套印專家</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
 			<span class="navbar-toggler-icon"></span>
 			導覽列</button>
@@ -119,12 +119,16 @@
 	</nav>
 	<!-- 內容 -->
 
-	<iframe title="內容" name="content" src="latest_news.html" style="width:100%; border-width:0; overflow:hidden;" scrolling="no" onload="resizeIframe(this)"></iframe>
+	<iframe title="內容" name="content" src="latest_news.html" height="1100" onload="resizeIframe(this)" style="overflow:hidden; width:100%; border-width:0;" ></iframe>
+    <!-- 20200502
+      移除scrolling="no" 
+      加入height="1100"
+     -->
 
 	<!-- 頁尾 -->
 	<footer class="container-fluid">
 		<hr>
 		<p class="float-right"><a href="javascript:history.back()">回上一頁</a></p>
-		<p>&copy; 2019 電腦套印專家&middot; <a href="copyright_notice.html" target="content">版權聲明</a> &middot; <a href="contact_us.html" target="content">聯絡我們</a></p>
+		<p>&copy; 2020 電腦套印專家&middot; <a href="copyright_notice.html" target="content">版權聲明</a> &middot; <a href="contact_us.html" target="content">聯絡我們</a></p>
 	</footer>
 </body></html>
