@@ -442,6 +442,8 @@ TWEnvelope238x98_03,信封,直式信封_薪資袋,1100717
 TWEnvelopeKennyart98x220,信封,巨城中式標準信封,1110831
 TWEnvelopeKennyart98x220_01,信封,巨城中式標準信封(人名專用),1111218
 TWEnvelopeRed_192x90_1P,信封,紅包袋,1100415
+TWEnvelopeRed_192x90_1P-5,信封,紅包袋-賀詞5個字,1140114
+TWEnvelopeRed_192x90_1P-6,信封,紅包袋-賀詞6個字,1140114
 TWEnvelopeRed_192x90_2P,信封,紅包袋雙人祝福,1100415
 TWEnvelopeStapro392175,信封,史泰博紅框黃牛皮公文封_15K,1111110
 TWEnvelopechuyuWA-60026,信封,珠友文化-A3(大A4)標準信封,1111119
