@@ -2,6 +2,20 @@
 
 > 檔名以 `_` 開頭，GitHub Pages（Jekyll）不會發佈到網站上。但 repo 本身是公開的，**不要在這裡寫密碼、金鑰或個人資料**。
 
+## ⚠ 待辦：另一台電腦（公司）第一次 pull 後要做
+
+做完後把下面的勾勾打上，再 commit 並 push。
+
+- [ ] **1. 檢查 `~/.ssh/config` 開頭有沒有 BOM**
+  ```bash
+  head -c 3 ~/.ssh/config | od -c
+  ```
+  如果輸出是 `357 273 277`，表示有 BOM，請改用 VS Code 打開，存成 `UTF-8`（不是 `UTF-8 with BOM`）。
+- [ ] **2. 確認 config 裡有 `Host github-account2`**，內容請照下面的「SSH 設定」一節。
+- [ ] **3. 確認金鑰檔案存在：** `~/.ssh/id_rsa_account2`
+- [ ] **4. 測試連線：** `ssh -T git@github-account2`，看到 `Hi FormPrint!` 就代表正常。
+- [ ] **5. 檢查儲存庫：** `git fsck --no-dangling`，沒有輸出就代表正常。有錯誤請照「儲存庫損壞時的修復方法」一節處理。
+
 ## 每次換電腦的固定流程
 
 開始工作前：
